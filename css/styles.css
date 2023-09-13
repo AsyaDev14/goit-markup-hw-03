@@ -180,7 +180,7 @@ img{
   overflow: hidden;
 }
 
-.features-item{
+.fetures-item{
   width: calc((100% - 72px) / 4);
 }
 
