@@ -23,12 +23,37 @@ h6 {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
+
+img{
+  display: block
+}
+/* container */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* header style */
+.header{
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container{
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo{
   font-family: "Raleway", sans-serif;
@@ -38,24 +63,16 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color:#4d5ae5;
+  margin-right: 76px;
 }
 
-.logo-span{
-  color: #2e2f42;
+.header-list{
+  display: flex;
+  gap: 40px;
 }
 
 .list {
   list-style: none
-}
-
-.logo{
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
 }
 
 .link{
@@ -67,15 +84,10 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
 }
 
 .header-item {
   font-weight: 500;
-}
-
-.list {
-  list-style: none;
 }
 
 .header-link {
@@ -83,6 +95,7 @@ a {
   color: #2E2F42;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -92,6 +105,12 @@ a {
 
 .header-adress {
   font-style: normal;
+  margin-left: 332px;
+}
+
+.adress-list {
+  display: flex;
+  gap: 40px;
 }
 
 .adress-link {
@@ -110,9 +129,11 @@ a {
 
 .hero{
  background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-title {
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -121,6 +142,11 @@ a {
 }
 
 .hero-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   background-color: #4D5AE5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -137,7 +163,34 @@ a {
 
 /* section [2] */
 
+.features{
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.features-item{
+  width: calc((100% - 72px) / 4);
+}
+
+.features-list{
+  display: flex;
+  gap: 24px;
+}
+
 .features-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -151,10 +204,14 @@ a {
   color: #434455;
 }
 
-/* section [3] */
 
+/* section [3] */
+.servise-section{
+  padding-bottom: 120px;
+}
 
 .servise-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -163,14 +220,23 @@ a {
   color: #2e2f42;
 }
 
+.servise-list{
+  display: flex;
+  gap: 24px;
+}
+
+.servise-item{
+  width: calc((100% - 48px) / 3);
+}
 
 /* team-section [4] */
 .team-section {
   background-color: #F4F4FD;
-
+  padding: 120px 0;
 }
 
 .team-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -179,11 +245,23 @@ a {
   color: #2e2f42;
 }
 
+.team-list{
+  display: flex;
+  gap: 24px;
+}
+
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: #FFFFFF;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-container{
+  padding: 32px 0;
 }
 
 .team-member{
+  text-align: center;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -191,7 +269,8 @@ a {
   color: #2e2f42;
 }
 
-.team-subtitle {
+.team-position {
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -201,6 +280,7 @@ a {
 /* footer */
 .footer {
   background-color:#2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -211,6 +291,8 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer_logo_span{
@@ -220,17 +302,12 @@ a {
 .footer-license {
   line-height: 1.5;
   color: #F4F4FD;
-  letter-spacing: 0.02em
+  letter-spacing: 0.02em;
+  max-width: 264px;
 } 
 
+
 /* Portfolio */
-
-/* .is-hidden {}
-
-.buttons-list {}
-
-.buttons-item {} */
-
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
